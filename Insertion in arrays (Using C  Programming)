@@ -1,0 +1,24 @@
+//INPUT:
+#include<stdio.h>
+int main() {
+  int arr[10]={10,20,30,50};
+  int n=4;
+  int insertVal = 40;
+  int pos=3;
+  for(int i=n;i>pos;i--){
+    arr[i]=arr[i - 1];
+  }
+  arr[pos]=insertVal;n++;
+  printf("The updated value is :");
+  for(int i=0;i<n;i++){
+    printf("%d \n", arr[i]);
+    
+  }
+  return 0;
+}
+//OUTPUT:
+The updated value is;10
+20
+30
+40
+50
